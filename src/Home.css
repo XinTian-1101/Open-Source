@@ -1,0 +1,82 @@
+.main-container{
+    padding-bottom: 2rem;
+    padding-right: 1.5em;
+}
+
+.main-container h1{
+    padding-left: 2rem;
+}
+  
+.main-container h2,h3,p{
+    padding-left: 2.2rem;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+  
+a:hover{
+    text-decoration: underline;
+}
+
+.link-container{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+    margin-top: 1rem;
+    padding-left: 2.2rem;
+}
+
+ol,ul{
+    padding-left: 3.2rem;
+}
+
+.table-container{
+    padding-left: 2.2rem;;
+}
+
+.image-container{
+    padding-left: 2.2rem;
+    max-width: 20rem;
+}
+
+.image-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.image-wrapper img{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+
+.video-container{
+    padding-left: 2.2rem;
+    max-width: 40rem; 
+}
+
+.video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px; 
+    background: #000;
+}
+
+.video-wrapper iframe{
+    position: absolute;
+    width: 100%;         
+    height: 100%;        
+}
+
+.responsive-video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
