@@ -1,0 +1,102 @@
+.btn-allEvent {
+    background-color: #009688;
+    border: 1px solid #009688;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    padding: .6rem 2.8rem;
+    margin-top: .3rem;
+    margin-right: 2.2rem;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-allEvent:hover {
+    background-color: #00796b; 
+}
+
+.btn-allEvent:active {
+    transform: scale(0.95);
+    background-color: #004d40; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-upcoming {
+    background-color: #428ee6; 
+    border: 1px solid #428ee6;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    padding: .6rem 2.8rem;
+    margin-top: .3rem;
+    margin-right: 2.2rem;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-upcoming:hover {
+    background-color: #3578c5; 
+}
+
+.btn-upcoming:active {
+    transform: scale(0.95);
+    background-color: #2c6ab1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-pastEvent {
+    background-color: #6c757d; 
+    border: 1px solid #6c757d;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    padding: .6rem 2.8rem;
+    margin-top: .3rem;
+    margin-right: 2.2rem;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-pastEvent:hover {
+    background-color: #5a6268; 
+}
+
+.btn-pastEvent:active {
+    transform: scale(0.95);
+    background-color: #495057; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.btn.active {
+    background-color: #004d40; 
+    color: white;
+    border-color: #004d40;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-6px); 
+    transition: transform 0.1s ease, box-shadow 0.1s ease; 
+}
+
+.btn.active:active {
+    transform: translateY(4px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.event-card{
+    margin-bottom: 2.2rem;
+    margin-top: 1.5rem;
+}
+
+.card{
+    border: 1px solid rgb(172, 172, 172);
+}
+
+.event-card .card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.event-card .card:hover {
+    transform: rotateY(6deg) rotateX(6deg) scale(1.03);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); 
+    border-color: rgba(0, 0, 0, 0.2); 
+}

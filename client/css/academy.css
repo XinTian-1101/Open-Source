@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* General */
+.padding{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.85; 
+}
+
+
+/* Card */
+.card{
+    border: 1px solid rgb(172, 172, 172);
+    width: 95%;
+}
+
+.card .cardclick{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.cardclick:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ONLY FOR Topic1 HTML*/
+.Edusection-container img{
+    border-radius: 6px;
+}
+
+.Edusection-container p, ul {
+    margin-left: 1;
+    line-height: 1.8; 
+    font-size:15px;
+}
+
+.video-section p{
+    margin-left: 16rem;
+    padding-left: .5em;
+    padding-bottom: .5em;
+}
+
+/* Quiz Section */
+.quiz-container {
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 4.5rem;
+}
+
+
+.quiz-card-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/* Quiz Card - ONLY FOR Quiz html*/
+.quiz-card {
+    border: 1px solid #acacac;
+    border-radius: 20px !important;
+    width: 60% !important;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4), 
+                0 6px 12px rgba(0, 0, 0, 0.25); 
+    transform: perspective(1000px) rotateX(0deg);
+    border-radius: 12px; 
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+/* Form */
+.form-check-label {
+    line-height: 2.5rem; 
+}
+
+/* Button Side */
+
+.btn-secondary{
+    font-size: medium;
+    font-weight: 100;
+    padding: .5rem 1rem;
+}
+
+.btn-click{
+    background-color: #27b057;
+    border: 1px solid #27b057;
+    color: white;
+    font-size: medium;
+    font-weight: 100;
+    padding: .5rem 1rem;
+}
+
+.btn-click:hover{
+    color: white;
+    background-color: #75e17c;
+    border: 1px solid #75e17c;
+}
+
+.btn-option {
+    width: 70%;
+    padding: 1.2em;
+    margin: .5em 0;
+    background-color: #eaeaea;
+    border: 1px solid #707070;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-option:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-option:focus {
+    outline: none;
+}
+
+.correct-option {
+    background-color: #28a745 !important;
+    color: white;
+    border: 2px solid #0f822a;
+}
+
+.wrong-option {
+    background-color: #d72436 !important; 
+    color: white;
+    border: 2px solid #c40417;
+}
+
+.disabled-option {
+    background-color: #f8f9fa !important; /* Light grey */
+    color: #3d4247;
+    pointer-events: none;
+    border: 1px solid #8f8f8f;
+}
