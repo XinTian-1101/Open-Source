@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Age Check</title>
+        <script>
+            function checkAge(event){
+                event.preventDefault(); // Prevent the form from submitting
+
+                var age = document.getElementById("age").value;
+                var message = " ";
+
+                if(age < 21){
+                    message="You're too young to vote";
+                }
+
+                else{
+                    message = "You can vote!";
+                }
+
+                document.getElementById("result").textContent = message;
+
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <h2>Check Voting Eligibility</h2>
+        <form onsubmit="checkAge(event)">
+            <label>Enter Your Age : </label>
+            <input type="number" id="age" name="age" required>
+            <button>Submit</button>
+        </form>
+        <p id="result" style="font-weight: bold;"></p>
+    </body>
+
+</html>
+
+
+
+
