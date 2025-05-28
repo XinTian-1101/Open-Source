@@ -18,6 +18,7 @@
             // Default query
             $query= 'SELECT * FROM dishes ORDER BY dish_price ASC';
 
+            // For checking purpose can use required, trim() other that ifSelf;
             // Check Form Submission
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (!empty($_POST['searchItem'])) {
